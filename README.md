@@ -7,8 +7,6 @@ Dev-Server zum visuellen Editor macht. Element anklicken, im Panel ändern,
 speichern — was herauskommt, ist echter Tailwind-Code im Projekt. Kein Export,
 kein Zwischenformat, keine Sperre.
 
-> Screenshot: `docs/panel.png` *(noch einzufügen)*
-
 ## Für wen das gedacht ist
 
 Für Agenturen, die bisher mit Website-Baukästen arbeiten und an KI-Werkzeuge
