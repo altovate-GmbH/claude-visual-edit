@@ -1,6 +1,6 @@
 ---
 name: visual-edit
-description: Website-Entwuerfe direkt auf der laufenden Seite visuell bearbeiten statt per Prompt — Element anklicken, Text, Farben, Abstaende, Typografie und Layout im Panel aendern, Ergebnis wird als Tailwind-Klassen in den JSX-Quellcode zurueckgeschrieben. Use when Alex an einem Website-Entwurf, einer Landingpage oder einem UI herumschrauben will ohne Aenderungen zu beschreiben; bei "visuell bearbeiten", "live auf der Seite aendern", "direkt anklicken", "ohne prompten designen", "Live-Editor", "visual edit", "WYSIWYG", "Abstaende anpassen", "Farbe von dem Button aendern"; oder wenn eine Feedback-Runde am Design viele kleine Korrekturen bringt, die als Prompt-Pingpong zu langsam waeren.
+description: Website-Entwuerfe direkt auf der laufenden Seite visuell bearbeiten statt per Prompt — Element anklicken, Text, Farben, Abstaende, Typografie und Layout im Panel aendern, Ergebnis wird als Tailwind-Klassen in den JSX-Quellcode zurueckgeschrieben. Use when der Nutzer an einem Website-Entwurf, einer Landingpage oder einem UI herumschrauben will ohne Aenderungen zu beschreiben; bei "visuell bearbeiten", "live auf der Seite aendern", "direkt anklicken", "ohne prompten designen", "Live-Editor", "visual edit", "WYSIWYG", "Abstaende anpassen", "Farbe von dem Button aendern"; oder wenn eine Feedback-Runde am Design viele kleine Korrekturen bringt, die als Prompt-Pingpong zu langsam waeren.
 ---
 
 # Visual Edit — Live-Bearbeitung im Browser
@@ -45,7 +45,7 @@ Das Script kopiert die Runtime nach `<projekt>/.visual-edit/`, installiert
 `preview_start` mit dem Dev-Server-Eintrag aus `.claude/launch.json`, sonst
 `npm run dev` und die URL im Browser-Pane öffnen. Das Panel erscheint rechts.
 
-Danach Alex übergeben — mit diesen Bedienhinweisen:
+Danach an den Nutzer übergeben — mit diesen Bedienhinweisen:
 
 | Aktion | Wirkung |
 |---|---|
@@ -84,13 +84,13 @@ und die Konsole des Dev-Servers zeigt eine Zeile pro Durchgang. Dann:
 2. `skipped` im Protokoll prüfen. Übersprungen wird, was nicht sicher
    automatisch geht: `className={styles.x}`, Texte mit Ausdrücken
    (`{title}`), Dateien, die zwischenzeitlich von Hand geändert wurden.
-   Diese Stellen **von Hand nachziehen** und Alex sagen, welche das waren.
+   Diese Stellen **von Hand nachziehen** und sagen, welche das waren.
 3. Klassen aufräumen, wo der Editor Redundanz hinterlassen hat
    (z. B. `p-4 pt-8` → entweder beides bewusst oder zusammenfassen).
 
 ### 4. Abschließen
 
-Wenn Alex fertig ist: Dev-Server stoppen. `.visual-edit/` darf liegen bleiben,
+Wenn der Nutzer fertig ist: Dev-Server stoppen. `.visual-edit/` darf liegen bleiben,
 es ist gitignored und im Produktions-Build inaktiv (`apply: 'serve'`).
 
 Soll es ganz weg: Ordner löschen, Import und `visualEdit(),` aus der Vite-Config
@@ -139,7 +139,7 @@ das Panel notfalls um, statt den Begriff zu erklären.
 - **Rohe Tailwind-Klassen** für alles Übrige
 - **Struktur** — Element duplizieren oder löschen
 
-## Grenzen — Alex vorab sagen
+## Grenzen — vorab ansprechen
 
 - **Live-Vorschau vs. Code.** Neue Tailwind-Klassen existieren im kompilierten
   CSS noch nicht, deshalb zeigt das Overlay sie als Inline-Style. Nach dem
