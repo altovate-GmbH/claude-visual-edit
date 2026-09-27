@@ -1,0 +1,15 @@
+{
+  "name": "visual-edit",
+  "description": "Website-Entwürfe direkt auf der laufenden Seite anklicken und ändern — das Ergebnis landet als sauberer Code im Projekt.",
+  "owner": {
+    "name": "Altovate GmbH",
+    "url": "https://github.com/altovate-GmbH"
+  },
+  "plugins": [
+    {
+      "name": "visual-edit",
+      "source": "./",
+      "description": "Macht den laufenden Dev-Server zum visuellen Editor: Element anklicken, Text, Farben, Abstände, Bilder, Rahmen und Animationen im Panel ändern — geschrieben wird echter Tailwind-Code."
+    }
+  ]
+}

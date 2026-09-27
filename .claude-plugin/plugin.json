@@ -1,0 +1,11 @@
+{
+  "name": "visual-edit",
+  "description": "Website-Entwürfe visuell bearbeiten statt per Prompt. Element anklicken, ändern, speichern — das Ergebnis ist echter Tailwind-Code im Projekt.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Altovate GmbH"
+  },
+  "homepage": "https://github.com/altovate-GmbH/claude-visual-edit",
+  "repository": "https://github.com/altovate-GmbH/claude-visual-edit",
+  "keywords": ["visual-editor", "tailwind", "react", "vite", "wysiwyg", "no-code", "deutsch"]
+}
